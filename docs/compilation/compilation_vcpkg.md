@@ -90,7 +90,6 @@ make -j
 make install
 ```
 
-
 ### Compilation on Windows
 
 On Windows, installing the Boost.Interprocess package is necessary.
@@ -110,5 +109,9 @@ cmake --build . --parallel
 cmake --build . --target install
 ```
 
+```
+cmake -DCMAKE_TOOLCHAIN_FILE="D:/ProgramFiles/vcpkg/scripts/buildsystems/vcpkg.cmake" -DCMAKE_INSTALL_PREFIX=<"D:/ProgramFiles/sgl/"> ..
+-DCMAKE_BUILD_TYPE=Debug
+```
 Hint: To change the language of warnings and error messages to English even if your system uses another language,
 consider setting the environment variable `set VSLANG=1033`.
